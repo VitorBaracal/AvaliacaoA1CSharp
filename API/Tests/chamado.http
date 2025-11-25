@@ -1,0 +1,25 @@
+### Listar todas as tarefas
+GET http://localhost:5000/api/chamado/listar
+
+### Cadastrar uma nova tarefa
+POST http://localhost:5000/api/chamado/cadastrar
+Content-Type: application/json
+
+{
+    "descricao": "Teste"
+}
+
+### Alterar Status do Chamado
+PATCH http://localhost:5000/api/chamado/alterar
+Content-Type: application/json
+
+{
+    "chamadoId": "2f1b7dc1-3b9a-4e1a-a389-7f5d2f1c8f3e"
+}
+
+### Listar Chamados Não Resolviodos
+GET http://localhost:5000/api/chamado/naoresolvido
+
+### Listar Chamados Resolvidos
+GET http://localhost:5000/api/chamado/resolvidos
+
